@@ -26,12 +26,37 @@
  </url>
  <url>
   <loc>http://mattdietz.net/categories/</loc>
-  <lastmod>2013-08-13</lastmod>
+  <lastmod>2013-08-25</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/game-programming.html</loc>
+  <lastmod>2013-08-25</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/games.html</loc>
+  <lastmod>2013-08-25</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/gaming.html</loc>
+  <lastmod>2013-08-25</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://mattdietz.net/categories/index.html</loc>
-  <lastmod>2013-08-13</lastmod>
+  <lastmod>2013-08-25</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/ludum-dare.html</loc>
+  <lastmod>2013-08-25</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/ludum_dare.html</loc>
+  <lastmod>2013-08-25</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -46,7 +71,7 @@
  </url>
  <url>
   <loc>http://mattdietz.net/index.html</loc>
-  <lastmod>2013-08-13</lastmod>
+  <lastmod>2013-08-25</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -61,7 +86,7 @@
  </url>
  <url>
   <loc>http://mattdietz.net/posts/cdn-test.html</loc>
-  <lastmod>2013-08-13</lastmod>
+  <lastmod>2013-08-25</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -72,6 +97,16 @@
  <url>
   <loc>http://mattdietz.net/posts/dummy-post.html</loc>
   <lastmod>2013-08-12</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/posts/ludum-18-hours-to-go.html</loc>
+  <lastmod>2013-08-25</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/posts/ludum-dare-18-hours-to-go.html</loc>
+  <lastmod>2013-08-25</lastmod>
   <priority>0.5000</priority>
  </url>
 </urlset>
