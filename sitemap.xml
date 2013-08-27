@@ -26,37 +26,52 @@
  </url>
  <url>
   <loc>http://mattdietz.net/categories/</loc>
-  <lastmod>2013-08-25</lastmod>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/c.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://mattdietz.net/categories/game-programming.html</loc>
-  <lastmod>2013-08-25</lastmod>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://mattdietz.net/categories/games.html</loc>
-  <lastmod>2013-08-25</lastmod>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://mattdietz.net/categories/gaming.html</loc>
-  <lastmod>2013-08-25</lastmod>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://mattdietz.net/categories/index.html</loc>
-  <lastmod>2013-08-25</lastmod>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://mattdietz.net/categories/ludum-dare.html</loc>
-  <lastmod>2013-08-25</lastmod>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://mattdietz.net/categories/ludum_dare.html</loc>
   <lastmod>2013-08-25</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/osx.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/sfml.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -71,7 +86,7 @@
  </url>
  <url>
   <loc>http://mattdietz.net/index.html</loc>
-  <lastmod>2013-08-25</lastmod>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -87,6 +102,11 @@
  <url>
   <loc>http://mattdietz.net/posts/cdn-test.html</loc>
   <lastmod>2013-08-25</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/posts/compiling-sfml-for-broader-osx-compatibility.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -106,7 +126,7 @@
  </url>
  <url>
   <loc>http://mattdietz.net/posts/ludum-dare-18-hours-to-go.html</loc>
-  <lastmod>2013-08-25</lastmod>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
 </urlset>
