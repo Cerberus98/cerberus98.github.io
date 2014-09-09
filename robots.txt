@@ -1,0 +1,2 @@
+Sitemap: http://mattdietz.net/sitemapindex.xml
+

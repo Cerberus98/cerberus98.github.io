@@ -5,148 +5,23 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>http://mattdietz.net/</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/2013/</loc>
-  <lastmod>2013-08-12</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/2013/index.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/2014/</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/2014/index.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
   <loc>http://mattdietz.net/archive.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/categories/</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/categories/c.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/categories/game-programming.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/categories/games.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/categories/gaming.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-09-09</lastmod>
  </url>
  <url>
   <loc>http://mattdietz.net/categories/index.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/categories/ludum-dare.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/categories/ludum_dare.html</loc>
-  <lastmod>2013-08-25</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/categories/osx.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/categories/remote-work.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/categories/sfml.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/galleries/</loc>
-  <lastmod>2013-08-12</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-09-09</lastmod>
  </url>
  <url>
   <loc>http://mattdietz.net/galleries/index.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-09-09</lastmod>
  </url>
  <url>
   <loc>http://mattdietz.net/index.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/listings/</loc>
-  <lastmod>2013-08-12</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-09-09</lastmod>
  </url>
  <url>
   <loc>http://mattdietz.net/listings/index.html</loc>
-  <lastmod>2013-08-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/posts/cdn-test.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/posts/compiling-sfml-for-broader-osx-compatibility.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/posts/derp.html</loc>
-  <lastmod>2013-08-12</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/posts/dummy-post.html</loc>
-  <lastmod>2013-08-12</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/posts/ludum-18-hours-to-go.html</loc>
-  <lastmod>2013-08-25</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/posts/ludum-dare-18-hours-to-go.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://mattdietz.net/posts/team-communication-and-the-lcd.html</loc>
-  <lastmod>2014-04-13</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-09-09</lastmod>
  </url>
 </urlset>

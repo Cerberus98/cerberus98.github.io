@@ -1,40 +1,97 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="Matt Dietz"><title>Compiling SFML for broader OS/X compatibility | mattdietz.net</title><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"></head><body>
-    <script type="text/javascript">var addthis_config={"ui_language":"en"};</script><div class="container-fluid" id="container">
-    <div class="row-fluid" id="titlerow">
-    <div class="span12" id="titlecolumn">
-    <!-- Banner-like substance !-->
-        <div class="titlebox">
-        <h1 id="blog-title">
-            <a href="../" title="mattdietz.net">mattdietz.net</a>
-        </h1>
-        
-        
-        <hr></div>
-    <!-- End of banner-like substance !-->
-    <div class="row-fluid" id="contentrow">
-        <div class="span10" id="contentcolumn">
-            <!--Body content-->
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compiling SFML for broader OS/X compatibility | mattdietz.net</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="http://mattdietz.net/posts/compiling-sfml-for-broader-osx-compatibility.html">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Matt Dietz">
+<meta name="og:title" content="Compiling SFML for broader OS/X compatibility">
+<meta name="og:url" content="http://mattdietz.net/posts/compiling-sfml-for-broader-osx-compatibility.html">
+<meta name="og:description" content="I recently competed in Ludum Dare 27, and one of the biggest struggles I had was making an application I built on the command line on my machine actually run for others. The first sign that I should h">
+<meta name="og:site_name" content="mattdietz.net">
+<meta name="og:type" content="article">
+</head>
+<body>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://mattdietz.net/">
+
+                <span id="blog-title">mattdietz.net</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+<li>
+<a href="https://twitter.com/cerberus98">Twitter</a>
+                </li>
+<li>
+<a href="https://github.com/cerberus98">Github</a>
+                </li>
+<li>
+<a href="https://www.linkedin.com/pub/matt-dietz/3/742/48a">LinkedIn</a>
+                </li>
+<li>
+<a href="../archive.html">Archives</a>
+                </li>
+<li>
+<a href="../categories/index.html">Tags</a>
+                </li>
+<li>
+<a href="../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="compiling-sfml-for-broader-osx-compatibility.md" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
             
-    <div class="postbox">
-    
-    <h1>Compiling SFML for broader OS/X compatibility</h1>
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Compiling SFML for broader OS/X compatibility</a></h1>
 
-    <hr><small>
-        Posted: <time class="published" datetime="2013-08-26T21:04:39">2013-08-26 21:04</time>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Matt Dietz</span></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2013-08-26T21:04:39+00:00" itemprop="datePublished" title="Publication date">2013-08-26 21:04</time></a></p>
+                <p class="commentline">
+        
+    <a href="compiling-sfml-for-broader-osx-compatibility.html#disqus_thread" data-disqus-identifier="cache/posts/compiling-sfml-for-broader-osx-compatibility.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="compiling-sfml-for-broader-osx-compatibility.md" id="sourcelink">Source</a></p>
+
+        </div>
         
 
-        
-          |  More posts about
-            <a class="tag" href="../categories/sfml.html"><span class="badge badge-info">SFML</span></a>
-            <a class="tag" href="../categories/games.html"><span class="badge badge-info">games</span></a>
-            <a class="tag" href="../categories/c.html"><span class="badge badge-info">C++</span></a>
-            <a class="tag" href="../categories/game-programming.html"><span class="badge badge-info">game programming</span></a>
-            <a class="tag" href="../categories/osx.html"><span class="badge badge-info">OSX</span></a>
-
-    </small>
-    <hr><p>I recently competed in Ludum Dare 27, and one of the biggest struggles I had was making an application I built on the command line on my machine actually run for others. The first sign that I should have considered alternative frameworks was when I could only get SFML to link properly into my game when I built it from bleeding edge source. However, I'd been trucking along just fine using the compiled dylibs. I had been assuming the entire time that it was sufficient to include code and instructions for building the project yourself, but when the barrier to entry is too high, people will simply prefer all the Unity and HTML5 Canvas games. It's hard to blame them, really.</p>
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>I recently competed in Ludum Dare 27, and one of the biggest struggles I had was making an application I built on the command line on my machine actually run for others. The first sign that I should have considered alternative frameworks was when I could only get SFML to link properly into my game when I built it from bleeding edge source. However, I'd been trucking along just fine using the compiled dylibs. I had been assuming the entire time that it was sufficient to include code and instructions for building the project yourself, but when the barrier to entry is too high, people will simply prefer all the Unity and HTML5 Canvas games. It's hard to blame them, really.</p>
 <p>So, I set out to figure out how to package up SFML with my binary and ship it. After stumbling through a bunch of mediocre attempts to include the SFML dylibs in the zip file I submitted ot the competition, I finally realized the only thing left to do was construct a Mac app bundle.</p>
 <p>Enter XCode.</p>
 <p>Getting my project set up was relatively easy, especially using the SFML templates that the SFML installer created for me. However, the first headache came when I tried to build the project against the default settings. After some Googling, I finally stumbled across a <a href="http://www.sfml-dev.org/tutorials/2.0/start-osx.php">SFML Tutorial</a> about setting up a "Hello World" style Xcode project using SFML. I proceeded to import all the files I'd been working on into XCode, triggered a build and... linker errors. I tried going back to installing the packaged SFML, to no avail. Switched back to compiling frameworks, but had issues with them (though I now realize why that route failed, more below.) and finally went back to where I started, building dylibs from source.</p>
@@ -44,66 +101,77 @@
 <p>The final pain was figuring out where the XCode SDKs had moved. Every link on Google said they should have been in /Developer, off the root. However, just like a million other annoying things, Lion moved it.</p>
 <p>The new location is under /Application/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs</p>
 <p>Anyway, here's the way to build SFML source:</p>
-<div class="code"><pre><span class="n">cmake</span> <span class="o">-</span><span class="n">G</span> <span class="err">'</span><span class="n">Unix</span> <span class="n">Makefiles</span><span class="err">'</span> <span class="o">-</span><span class="n">DCMAKE_OSX_ARCHITECTURES</span><span class="o">=</span><span class="err">'</span><span class="n">i386</span><span class="p">;</span><span class="n">x86_64</span><span class="err">'</span>  <span class="o">-</span><span class="n">DSFML_INSTALL_XCODE4_TEMPLATES</span><span class="o">=</span><span class="err">'</span><span class="n">ON</span><span class="err">'</span> <span class="o">-</span><span class="n">DCMAKE_OSX_SYSROOT</span><span class="o">=/</span><span class="n">Applications</span><span class="o">/</span><span class="n">Xcode</span><span class="p">.</span><span class="n">app</span><span class="o">/</span><span class="n">Contents</span><span class="o">/</span><span class="n">Developer</span><span class="o">/</span><span class="n">Platforms</span><span class="o">/</span><span class="n">MacOSX</span><span class="p">.</span><span class="n">platform</span><span class="o">/</span><span class="n">Developer</span><span class="o">/</span><span class="n">SDKs</span><span class="o">/</span><span class="n">MacOSX10</span><span class="mf">.7</span><span class="p">.</span><span class="n">sdk</span> <span class="o">-</span><span class="n">DCMAKE_OSX_DEPLOYMENT_TARGET</span><span class="o">=</span><span class="mf">10.7</span>
-</pre></div>
+<pre class="code literal-block"><span class="n">cmake</span> <span class="o">-</span><span class="n">G</span> <span class="err">'</span><span class="n">Unix</span> <span class="n">Makefiles</span><span class="err">'</span> <span class="o">-</span><span class="n">DCMAKE_OSX_ARCHITECTURES</span><span class="o">=</span><span class="err">'</span><span class="n">i386</span><span class="p">;</span><span class="n">x86_64</span><span class="err">'</span>  <span class="o">-</span><span class="n">DSFML_INSTALL_XCODE4_TEMPLATES</span><span class="o">=</span><span class="err">'</span><span class="n">ON</span><span class="err">'</span> <span class="o">-</span><span class="n">DCMAKE_OSX_SYSROOT</span><span class="o">=/</span><span class="n">Applications</span><span class="o">/</span><span class="n">Xcode</span><span class="p">.</span><span class="n">app</span><span class="o">/</span><span class="n">Contents</span><span class="o">/</span><span class="n">Developer</span><span class="o">/</span><span class="n">Platforms</span><span class="o">/</span><span class="n">MacOSX</span><span class="p">.</span><span class="n">platform</span><span class="o">/</span><span class="n">Developer</span><span class="o">/</span><span class="n">SDKs</span><span class="o">/</span><span class="n">MacOSX10</span><span class="mf">.7</span><span class="p">.</span><span class="n">sdk</span> <span class="o">-</span><span class="n">DCMAKE_OSX_DEPLOYMENT_TARGET</span><span class="o">=</span><span class="mf">10.7</span>
+</pre>
 
 
 <p>Hope this helps someone!</p>
-    
-    <ul class="pager"><li class="previous">
-            <a href="ludum-dare-18-hours-to-go.html">← Previous post</a>
-        </li>
-        <li class="next">
-            <a href="team-communication-and-the-lcd.html">Next post →</a>
-        </li>
-    </ul><div id="disqus_thread"></div>
-        <script type="text/javascript">
-        var disqus_shortname ="nikolademo";
-            var disqus_url="http://mattdietz.net/posts/compiling-sfml-for-broader-osx-compatibility.html";
-        var disqus_title="Compiling SFML for broader OS/X compatibility";
-        var disqus_identifier="cache/posts/compiling-sfml-for-broader-osx-compatibility.html";
-        var disqus_config = function () {
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../categories/c.html" rel="tag">C++</a></li>
+           <li><a class="tag p-category" href="../categories/osx.html" rel="tag">OSX</a></li>
+           <li><a class="tag p-category" href="../categories/sfml.html" rel="tag">SFML</a></li>
+           <li><a class="tag p-category" href="../categories/game-programming.html" rel="tag">game programming</a></li>
+           <li><a class="tag p-category" href="../categories/games.html" rel="tag">games</a></li>
+        </ul>
+<ul class="pager">
+<li class="previous">
+                <a href="ludum-dare-18-hours-to-go.html" rel="prev" title="Ludum Dare, 18 Hours to go!">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="team-communication-and-the-lcd.html" rel="next" title="Team Communication and the Least Common Denominator">Next post</a>
+            </li>
+        </ul></nav></aside><section class="comments"><h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="http://mattdietz.net/posts/compiling-sfml-for-broader-osx-compatibility.html",
+        disqus_title="Compiling SFML for broader OS/X compatibility",
+        disqus_identifier="cache/posts/compiling-sfml-for-broader-osx-compatibility.html",
+        disqus_config = function () {
             this.language = "en";
         };
         (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
-    
 
-    </div>
-
-            <!--End of body content-->
-            <hr><small>Contents © 2014 <a href="mailto:matthew.dietz%20AT%20gmail.com">Matt Dietz</a> - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a></small>
-        </div>
-        <div class="span2" id="sidebar">
-            <!--Sidebar content-->
-            <ul class="unstyled"><li>
-            
-    <!-- Social buttons -->
-    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
-    <a class="addthis_button_more">Share</a>
-    <ul><li><a class="addthis_button_facebook"></a>
-    </li><li><a class="addthis_button_google_plusone_share"></a>
-    </li><li><a class="addthis_button_linkedin"></a>
-    </li><li><a class="addthis_button_twitter"></a>
-    </li></ul></div>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --></li><li><a href="https://twitter.com/cerberus98">Twitter</a>
-            </li><li><a href="https://github.com/cerberus98">Github</a>
-            </li><li><a href="https://www.linkedin.com/pub/matt-dietz/3/742/48a">LinkedIn</a>
-            </li><li><a href="../archive.html">Archives</a>
-            </li><li><a href="../categories/index.html">Tags</a>
-            </li><li><a href="../rss.xml">RSS</a>
-
-            </li><li>
-            </li></ul><!--End of sidebar content--></div>
-    </div>
-    </div>
-    </div>
+        </section></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 </div>
-    
-            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
+        <!--End of body content-->
+
+        <footer>
+            Contents © 2014         <a href="mailto:matthew.dietz%20AT%20gmail.com">Matt Dietz</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../assets/js/all-nocdn.js"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul>
+<li>
+<a class="addthis_button_facebook"></a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"></a>
+</li>
+<li>
+<a class="addthis_button_linkedin"></a>
+</li>
+<li>
+<a class="addthis_button_twitter"></a>
+</li>
+</ul>
+</div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+</body>
+</html>
