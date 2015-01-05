@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MVP vs MDP | mattdietz.net</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="http://mattdietz.net/posts/mvp-vs-mdp.html">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Matt Dietz">
+<meta name="og:title" content="MVP vs MDP">
+<meta name="og:url" content="http://mattdietz.net/posts/mvp-vs-mdp.html">
+<meta name="og:description" content="A frequent point of contention when developing new products is just how many features should be implemented before the product can be rolled out the door. While the specific meaning and implications o">
+<meta name="og:site_name" content="mattdietz.net">
+<meta name="og:type" content="article">
+</head>
+<body>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://mattdietz.net/">
+
+                <span id="blog-title">mattdietz.net</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+<li>
+<a href="https://twitter.com/cerberus98">Twitter</a>
+                </li>
+<li>
+<a href="https://github.com/cerberus98">Github</a>
+                </li>
+<li>
+<a href="https://www.linkedin.com/pub/matt-dietz/3/742/48a">LinkedIn</a>
+                </li>
+<li>
+<a href="../archive.html">Archives</a>
+                </li>
+<li>
+<a href="../categories/index.html">Tags</a>
+                </li>
+<li>
+<a href="../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="mvp-vs-mdp.md" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">MVP vs MDP</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Matt Dietz</span></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2014-11-15T11:43:49+00:00" itemprop="datePublished" title="Publication date">2014-11-15 11:43</time></a></p>
+                <p class="commentline">
+        
+    <a href="mvp-vs-mdp.html#disqus_thread" data-disqus-identifier="cache/posts/mvp-vs-mdp.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="mvp-vs-mdp.md" id="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>A frequent point of contention when developing new products is just how many features should be implemented before the product can be rolled out the door. While the specific meaning and implications of "MVP" have been done to death by thousands of other writers, I'm going to attempt re-iterate the need to distinguish "Minimum Viable Product" and "Minimum Desirable Product." These two terms are frequently at odds with one another, with MVP more often than not being used when MDP is the intended term.</p>
+<p>I'll start with two somewhat subjective definitions:</p>
+<ul>
+<li>Minimum Viable Product - The actual minimum product necessary to test assumptions and potentially prove the existence of a market</li>
+<li>Minimum Desirable Product - The smallest possible feature set product owners are willing to launch with</li>
+</ul>
+<p>Product owners often begin using "minimum viable product" in sentences after having read <em>The Lean Startup,</em> guessing at the intent of the book while completely missing the point: that an MVP is <strong>almost always</strong> more duct tape and bailing wire than it is automated software and polish. I've seen people un-ironically use the term MVP when explaining that a given product can't be launched without 90% of the overall road-mapped feature set. This is where "minimum desirable product," or MDP, is the better acronym. Your product owner is essentially telling you that the product isn't viable without the majority of the vision.</p>
+<p>Put differently, I believe the hesistation to equate MDP with MVP stems from the word "incomplete." One needs to eliminate the word "incomplete" from any conversation regarding the MVP. The MVP can't be incomplete; it's precisely the set of features you agree to build. Unfortunately, it's hard to change this mindset once it's established, largely because it's difficult to put your name on something that is invariably going to look so utterly unattractive. You yourself may find it hard to believe that anyone will give you money for the MVP. However, the ability to scrap a misfire early is worth its weight in salaried developer hours. It's your responsibility to try to convince the rest of your team and your product owners that it's in their best interest to release early and iterate. The only feeling worse than releasing a broken product is releasing something no one wants, and we've all been there.</p>
+<p>I recently worked on a product that involved developing nearly every feature on the roadmap before it was considered launch worthy. Meanwhile, my team argued that the product could have been represented by a handful of scripts and some manual labor. It sounds scary to ask customers to pay for a patchwork mess but the upshot is we could have launched a workable solution in under a week, tested our assumptions, conversed with the customers to figure out the next steps and most importantly proven it can work <strong>at all.</strong> Instead, we spent months in meetings building a nearly finished product and it could have all been for nothing. At the time of this writing, we still haven't launched the feature, so the outcome is unknown!</p>
+<p>You've likely experienced the alternate form of this problem: you start with a manageable workload and then the product manager scope creeps with "edge cases" that end up being features in disguise. Unfortunately, if this happens, it's probably your fault: you should have been working with the product manager and gotten him or her to agree to a fixed contract and timeline. The product managers job is to <a href="http://randsinrepose.com/archives/entropy-crushers/">remove chaos</a>, but he or she can't do that if you aren't taking the design portion seriously, including estimates of well-defined features.</p>
+<p>The ability to release early is the sign of both a mature team and a product owner willing to put the product itself ahead of his or her own ego. The MDP has to look as close to the MVP as possible, lest you risk wasted time, money and sanity. It's your job to convince your product owners that it's in their best interest to release early and add polish later.</p>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../categories/mdp.html" rel="tag">MDP</a></li>
+           <li><a class="tag p-category" href="../categories/mvp.html" rel="tag">MVP</a></li>
+           <li><a class="tag p-category" href="../categories/products.html" rel="tag">products</a></li>
+        </ul>
+<ul class="pager">
+<li class="previous">
+                <a href="namecheap-dyndns-with-a-mikrotik.html" rel="prev" title="Namecheap DynDNS with a Mikrotik">Previous post</a>
+            </li>
+        </ul></nav></aside><section class="comments"><h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="http://mattdietz.net/posts/mvp-vs-mdp.html",
+        disqus_title="MVP vs MDP",
+        disqus_identifier="cache/posts/mvp-vs-mdp.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+        <!--End of body content-->
+
+        <footer>
+            Contents © 2014         <a href="mailto:matthew.dietz%20AT%20gmail.com">Matt Dietz</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../assets/js/all-nocdn.js"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul>
+<li>
+<a class="addthis_button_facebook"></a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"></a>
+</li>
+<li>
+<a class="addthis_button_linkedin"></a>
+</li>
+<li>
+<a class="addthis_button_twitter"></a>
+</li>
+</ul>
+</div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+</body>
+</html>
