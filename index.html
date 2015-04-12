@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="description" content="Aspiring Jazz Programmer">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>mattdietz.net | mattdietz.net</title>
-<link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
-<link rel="canonical" href="http://mattdietz.net/index.html">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+    <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Aspiring Jazz Programmer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mattdietz.net | mattdietz.net</title>
+
+    
+            <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+
+    
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+
+      <link rel="canonical" href="http://mattdietz.net/index.html">
+
+
+
+
+    
+        <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]-->
+
+    
+
+
+
+
 </head>
 <body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
 <!-- Menubar -->
 
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><div class="container">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
 <!-- This keeps the margins nice -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -31,7 +53,8 @@
 <!-- /.navbar-header -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-<li>
+                
+                <li>
 <a href="https://twitter.com/cerberus98">Twitter</a>
                 </li>
 <li>
@@ -52,22 +75,56 @@
                 
             </li>
 </ul>
-<ul class="nav navbar-nav navbar-right"></ul>
-</div>
+
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                    
+                
+            </ul>
+        </div>
 <!-- /.navbar-collapse -->
     </div>
 <!-- /.container -->
-</nav><!-- End of Menubar --><div class="container">
+</nav>
+
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
     <div class="body-content">
         <!--Body content-->
         <div class="row">
             
             
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/perlin-noise-for-terrain-generation.html" class="u-url">Perlin Noise for terrain generation</a></h1>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/using-an-arduino-to-burn-bootloaders.html" class="u-url">Using an Arduino to burn bootloaders</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Matt Dietz</span></p>
-            <p class="dateline"><a href="posts/perlin-noise-for-terrain-generation.html" rel="bookmark"><time class="published dt-published" datetime="2015-02-22T18:52:44+00:00" itemprop="datePublished" title="Publication date">2015-02-22 18:52</time></a></p>
+            <p class="dateline"><a href="posts/using-an-arduino-to-burn-bootloaders.html" rel="bookmark"><time class="published dt-published" datetime="2015-04-12T19:55:14+00:00" title="2015-04-12 19:55">2015-04-12 19:55</time></a></p>
+                <p class="commentline">
+        
+    <a href="posts/using-an-arduino-to-burn-bootloaders.html#disqus_thread" data-disqus-identifier="cache/posts/using-an-arduino-to-burn-bootloaders.html">Comments</a>
+
+
+        </p>
+</div>
+    </header>
+    <div class="p-summary entry-summary">
+    <div>
+<p>A few years ago, my wife decided to buy me a bare bones, electronics learning kit called a <a href="http://www.nerdkits.com/">Nerdkit</a>. You can think of it as an <a href="http://en.wikipedia.org/wiki/Arduino">Arduino</a> on a <a href="http://en.wikipedia.org/wiki/Breadboard">breadboard</a>. Included in the kit are various sensors as well as a wonderful little guide walking you through the setup and introducing a lot of basic electronics concepts like <a href="http://en.wikipedia.org/wiki/Ohm%27s_law">Ohms Law</a>. Whereas an Arduino is a great jumping off point for creating lots of amazing projects quickly, it abstracts a lot of the nitty-gritty that I like to get into. It's kind of like learning to program in BASIC before tackling a lower-level language; more programmers than ever get through their entire career without knowing C, and I'm sure a lot of electronics hobbyists don't care to learn AVR-C or what makes a <a href="http://arduino.cc/en/Hacking/Bootloader?from=Tutorial.Bootloader">bootloader</a> work. This is why I like the Nerdkit so much: you're essentially building an Arduino from scratch.</p>
+<p>Whilst tinkering with said Nerdkit in the first few months, I managed to corrupt the bootloader on the chip. No matter what I tried, I couldn't flash new programs. Hours of frustration later, the Nerdkit ended up in a box in favor of less complicated things. Fast-forward a few years, and I find the Nerdkit and all the pieces in a box, and the memories of defeat come flooding back and so I decided this time I was going to get it working.</p>
+<p class="more"><a href="posts/using-an-arduino-to-burn-bootloaders.html">Read more…</a></p>
+</div>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/perlin-noise-for-terrain-generation.html" class="u-url">Perlin Noise for terrain generation</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Matt Dietz</span></p>
+            <p class="dateline"><a href="posts/perlin-noise-for-terrain-generation.html" rel="bookmark"><time class="published dt-published" datetime="2015-02-22T18:52:44+00:00" title="2015-02-22 18:52">2015-02-22 18:52</time></a></p>
                 <p class="commentline">
         
     <a href="posts/perlin-noise-for-terrain-generation.html#disqus_thread" data-disqus-identifier="cache/posts/perlin-noise-for-terrain-generation.html">Comments</a>
@@ -75,16 +132,23 @@
 
         </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p>One of the things I find fascinating is the idea of "random" content generation for games, and lately I've been fascinated with procedural generation of maps and terrain. One of the things that seems to be most prevalent in games is the need for realistic looking terrain. A common technique for this is generating <a href="http://en.wikipedia.org/wiki/Heightmap">Heightmaps</a> for use in commercial game engines like Unity and Unreal as well voxel based games like Minecraft. The values of the individual pixels of the heightmap are interpreted literally as terrain elevation. The problem with heightmap generation is it's tough to produce natural looking terrain with random numbers alone. This is where Perlin noise comes in.</p>
+    </header>
+    <div class="p-summary entry-summary">
+    <div>
+<p>One of the things I find fascinating is the idea of "random" content generation for games, and lately I've been fascinated with procedural generation of maps and terrain. One of the things that seems to be most prevalent in games is the need for realistic looking terrain. A common technique for this is generating <a href="http://en.wikipedia.org/wiki/Heightmap">Heightmaps</a> for use in commercial game engines like Unity and Unreal as well voxel based games like Minecraft. The values of the individual pixels of the heightmap are interpreted literally as terrain elevation. The problem with heightmap generation is it's tough to produce natural looking terrain with random numbers alone. This is where Perlin noise comes in.</p>
 <p>As you can see, Perlin noise is wonderful for generating things that look like terrain:</p>
-<p><img alt="CDN Test Screenshot" src="http://71736c127cff565b91bf-0044c42a78e82872de2148fe3ea73ce3.r79.cf2.rackcdn.com/terrain_perlin.png"><img alt="CDN Test Screenshot" src="http://71736c127cff565b91bf-0044c42a78e82872de2148fe3ea73ce3.r79.cf2.rackcdn.com/grayscale_perlin.png"></p>
+<p><img alt="CDN Test Screenshot" src="http://71736c127cff565b91bf-0044c42a78e82872de2148fe3ea73ce3.r79.cf2.rackcdn.com/terrain_perlin.png">
+<img alt="CDN Test Screenshot" src="http://71736c127cff565b91bf-0044c42a78e82872de2148fe3ea73ce3.r79.cf2.rackcdn.com/grayscale_perlin.png"></p>
 <p class="more"><a href="posts/perlin-noise-for-terrain-generation.html">Read more…</a></p>
+</div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/mvp-vs-mdp.html" class="u-url">MVP vs MDP</a></h1>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/mvp-vs-mdp.html" class="u-url">MVP vs MDP</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Matt Dietz</span></p>
-            <p class="dateline"><a href="posts/mvp-vs-mdp.html" rel="bookmark"><time class="published dt-published" datetime="2014-11-15T11:43:49+00:00" itemprop="datePublished" title="Publication date">2014-11-15 11:43</time></a></p>
+            <p class="dateline"><a href="posts/mvp-vs-mdp.html" rel="bookmark"><time class="published dt-published" datetime="2014-11-15T11:43:49+00:00" title="2014-11-15 11:43">2014-11-15 11:43</time></a></p>
                 <p class="commentline">
         
     <a href="posts/mvp-vs-mdp.html#disqus_thread" data-disqus-identifier="cache/posts/mvp-vs-mdp.html">Comments</a>
@@ -92,19 +156,25 @@
 
         </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p>A frequent point of contention when developing new products is just how many features should be implemented before the product can be rolled out the door. While the specific meaning and implications of "MVP" have been done to death by thousands of other writers, I'm going to attempt re-iterate the need to distinguish "Minimum Viable Product" and "Minimum Desirable Product." These two terms are frequently at odds with one another, with MVP more often than not being used when MDP is the intended term.</p>
+    </header>
+    <div class="p-summary entry-summary">
+    <div>
+<p>A frequent point of contention when developing new products is just how many features should be implemented before the product can be rolled out the door. While the specific meaning and implications of "MVP" have been done to death by thousands of other writers, I'm going to attempt re-iterate the need to distinguish "Minimum Viable Product" and "Minimum Desirable Product." These two terms are frequently at odds with one another, with MVP more often than not being used when MDP is the intended term.</p>
 <p>I'll start with two somewhat subjective definitions:</p>
 <ul>
 <li>Minimum Viable Product - The actual minimum product necessary to test assumptions and potentially prove the existence of a market</li>
 <li>Minimum Desirable Product - The smallest possible feature set product owners are willing to launch with</li>
 </ul>
 <p class="more"><a href="posts/mvp-vs-mdp.html">Read more…</a></p>
+</div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/namecheap-dyndns-with-a-mikrotik.html" class="u-url">Namecheap DynDNS with a Mikrotik</a></h1>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/namecheap-dyndns-with-a-mikrotik.html" class="u-url">Namecheap DynDNS with a Mikrotik</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Matt Dietz</span></p>
-            <p class="dateline"><a href="posts/namecheap-dyndns-with-a-mikrotik.html" rel="bookmark"><time class="published dt-published" datetime="2014-09-09T04:44:24+00:00" itemprop="datePublished" title="Publication date">2014-09-09 04:44</time></a></p>
+            <p class="dateline"><a href="posts/namecheap-dyndns-with-a-mikrotik.html" rel="bookmark"><time class="published dt-published" datetime="2014-09-09T04:44:24+00:00" title="2014-09-09 04:44">2014-09-09 04:44</time></a></p>
                 <p class="commentline">
         
     <a href="posts/namecheap-dyndns-with-a-mikrotik.html#disqus_thread" data-disqus-identifier="cache/posts/namecheap-dyndns-with-a-mikrotik.html">Comments</a>
@@ -112,15 +182,21 @@
 
         </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p>I've been wanting to use my Mikrotik to update DynDNS for some time. After digging, I found out that newer firmware had a "Cloud" option that effectively accomplishes it, but I wanted to use a domain I registered through Namecheap instead. Some googling showed that the "Scripts" functionality of the router was perfectly suited to the task; coupled with scheduling, I was good to go.</p>
+    </header>
+    <div class="p-summary entry-summary">
+    <div>
+<p>I've been wanting to use my Mikrotik to update DynDNS for some time. After digging, I found out that newer firmware had a "Cloud" option that effectively accomplishes it, but I wanted to use a domain I registered through Namecheap instead. Some googling showed that the "Scripts" functionality of the router was perfectly suited to the task; coupled with scheduling, I was good to go.</p>
 <p>You're going to want to go to Namecheap and enable DynDNS for the domain you'd like to use. Checkout <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/43/11/how-do-i-setup-a-host-for-dynamic-dns">How do I setup a Host for Dynamic DNS?</a> and <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/595/11/how-do-i-enable-dynamic-dns-for-a-domain">How do I enable Dynamic DNS for a domain?</a> for more information on getting that setup. After you've done so, Namecheap will show you a password; be sure to copy that.</p>
 <p class="more"><a href="posts/namecheap-dyndns-with-a-mikrotik.html">Read more…</a></p>
+</div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/team-communication-and-the-lcd.html" class="u-url">Team Communication and the Least Common Denominator</a></h1>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/team-communication-and-the-lcd.html" class="u-url">Team Communication and the Least Common Denominator</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Matt Dietz</span></p>
-            <p class="dateline"><a href="posts/team-communication-and-the-lcd.html" rel="bookmark"><time class="published dt-published" datetime="2014-04-08T19:32:25+00:00" itemprop="datePublished" title="Publication date">2014-04-08 19:32</time></a></p>
+            <p class="dateline"><a href="posts/team-communication-and-the-lcd.html" rel="bookmark"><time class="published dt-published" datetime="2014-04-08T19:32:25+00:00" title="2014-04-08 19:32">2014-04-08 19:32</time></a></p>
                 <p class="commentline">
         
     <a href="posts/team-communication-and-the-lcd.html#disqus_thread" data-disqus-identifier="cache/posts/team-communication-and-the-lcd.html">Comments</a>
@@ -128,8 +204,10 @@
 
         </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p>A recent Hacker News post mentioned producing crap. I've been so focused on trying to only put good things online that I've avoided just writing anything that may be less than optimal which, as the post suggested, implied that I'd never write anything at all. As such, I've decided to write about team communication, both externally and internally.</p>
+    </header>
+    <div class="p-summary entry-summary">
+    <div>
+<p>A recent Hacker News post mentioned producing crap. I've been so focused on trying to only put good things online that I've avoided just writing anything that may be less than optimal which, as the post suggested, implied that I'd never write anything at all. As such, I've decided to write about team communication, both externally and internally.</p>
 <p>One of the things my team is struggling is communication, especially when it comes to remote workers. My belief is that you need to "lower" the tier of communication to the level of the most disadvantaged co-worker. If everyone is available and in-person, bringing all the relevant people into the conversation face-to-face is the optimal solution. Meanwhile, if at least one person is in another city, state or country, everyone should communicate as much as possible using the most convenient medium available to those peers. Be it Skype, IRC, email or even smoke signals, unless careful attention is paid to ensuring your co-workers stay in the loop, invariably someone will be left out of an important conversation and feelings will be hurt.</p>
 <p>Disclaimer: We have not objectively solved this problem, but my hope is we get a little better every day.</p>
 <p>So this leaves the team with a conundrum: the mechanism of communication is likely less optimal than a closed door room full of whiteboards. In other words, your situation <em>sucks</em>, but imagine how the remote developers feel. Emphasis should be placed on maximizing collaboration while minimizing frustrating interaction. This usually requires effort and often money, too. Where does that leave half remote, half local teams? Ideally, you split the remote and local developers into focus groups, so that in-person communication doesn't need to be reproduced for the one or more remote peers. To put it another way, no one wants to play the secretary, and if someone does, the remote end likely receives a less than optimal description of the localized conversation.</p>
@@ -143,10 +221,14 @@
 <a href="http://tmux.sourceforge.net">tmux</a> - Great for sharing and collaboration.</li>
 </ul>
 </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/compiling-sfml-for-broader-osx-compatibility.html" class="u-url">Compiling SFML for broader OS/X compatibility</a></h1>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/compiling-sfml-for-broader-osx-compatibility.html" class="u-url">Compiling SFML for broader OS/X compatibility</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Matt Dietz</span></p>
-            <p class="dateline"><a href="posts/compiling-sfml-for-broader-osx-compatibility.html" rel="bookmark"><time class="published dt-published" datetime="2013-08-26T21:04:39+00:00" itemprop="datePublished" title="Publication date">2013-08-26 21:04</time></a></p>
+            <p class="dateline"><a href="posts/compiling-sfml-for-broader-osx-compatibility.html" rel="bookmark"><time class="published dt-published" datetime="2013-08-26T21:04:39+00:00" title="2013-08-26 21:04">2013-08-26 21:04</time></a></p>
                 <p class="commentline">
         
     <a href="posts/compiling-sfml-for-broader-osx-compatibility.html#disqus_thread" data-disqus-identifier="cache/posts/compiling-sfml-for-broader-osx-compatibility.html">Comments</a>
@@ -154,16 +236,22 @@
 
         </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <p>I recently competed in Ludum Dare 27, and one of the biggest struggles I had was making an application I built on the command line on my machine actually run for others. The first sign that I should have considered alternative frameworks was when I could only get SFML to link properly into my game when I built it from bleeding edge source. However, I'd been trucking along just fine using the compiled dylibs. I had been assuming the entire time that it was sufficient to include code and instructions for building the project yourself, but when the barrier to entry is too high, people will simply prefer all the Unity and HTML5 Canvas games. It's hard to blame them, really.</p>
+    </header>
+    <div class="p-summary entry-summary">
+    <div>
+<p>I recently competed in Ludum Dare 27, and one of the biggest struggles I had was making an application I built on the command line on my machine actually run for others. The first sign that I should have considered alternative frameworks was when I could only get SFML to link properly into my game when I built it from bleeding edge source. However, I'd been trucking along just fine using the compiled dylibs. I had been assuming the entire time that it was sufficient to include code and instructions for building the project yourself, but when the barrier to entry is too high, people will simply prefer all the Unity and HTML5 Canvas games. It's hard to blame them, really.</p>
 <p>So, I set out to figure out how to package up SFML with my binary and ship it. After stumbling through a bunch of mediocre attempts to include the SFML dylibs in the zip file I submitted ot the competition, I finally realized the only thing left to do was construct a Mac app bundle.</p>
 <p>Enter XCode.</p>
 <p class="more"><a href="posts/compiling-sfml-for-broader-osx-compatibility.html">Read more…</a></p>
+</div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/ludum-dare-18-hours-to-go.html" class="u-url">Ludum Dare, 18 Hours to go!</a></h1>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/ludum-dare-18-hours-to-go.html" class="u-url">Ludum Dare, 18 Hours to go!</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Matt Dietz</span></p>
-            <p class="dateline"><a href="posts/ludum-dare-18-hours-to-go.html" rel="bookmark"><time class="published dt-published" datetime="2013-08-25T01:14:13+00:00" itemprop="datePublished" title="Publication date">2013-08-25 01:14</time></a></p>
+            <p class="dateline"><a href="posts/ludum-dare-18-hours-to-go.html" rel="bookmark"><time class="published dt-published" datetime="2013-08-25T01:14:13+00:00" title="2013-08-25 01:14">2013-08-25 01:14</time></a></p>
                 <p class="commentline">
         
     <a href="posts/ludum-dare-18-hours-to-go.html#disqus_thread" data-disqus-identifier="cache/posts/ludum-dare-18-hours-to-go.html">Comments</a>
@@ -171,9 +259,10 @@
 
         </p>
 </div>
-    </header><div class="p-summary entry-summary">
-    <img alt="CDN Test Screenshot" src="http://71736c127cff565b91bf-0044c42a78e82872de2148fe3ea73ce3.r79.cf2.rackcdn.com/ludum01.png">
-</div>
+    </header>
+    <div class="p-summary entry-summary">
+    <p><img alt="CDN Test Screenshot" src="http://71736c127cff565b91bf-0044c42a78e82872de2148fe3ea73ce3.r79.cf2.rackcdn.com/ludum01.png"></p>
+    </div>
     </article>
 </div>
 
@@ -181,18 +270,30 @@
 
         
        <script>var disqus_shortname="mattdietzet";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
-</div>
+
+
+
+
+
+        </div>
         <!--End of body content-->
 
         <footer>
             Contents © 2015         <a href="mailto:matthew.dietz%20AT%20gmail.com">Matt Dietz</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
             
         </footer>
-</div>
+    </div>
 </div>
 
 
-            <script src="assets/js/all-nocdn.js"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+            <script src="assets/js/moment-with-locales.min.js"></script>
+            <script src="assets/js/fancydates.js"></script>
+        <script src="assets/js/jquery.colorbox-min.js"></script>
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
 <a class="addthis_button_more">Share</a>
 <ul>
 <li>
@@ -209,7 +310,19 @@
 </li>
 </ul>
 </div>
-<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><script>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script>$('a.image-reference:not(.islink)').colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+    <!-- fancy dates -->
+    <script>
+    moment.locale("");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script>
+    <!-- end fancy dates -->
+    
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -219,5 +332,6 @@
   ga('send', 'pageview');
 
 </script>
+
 </body>
 </html>

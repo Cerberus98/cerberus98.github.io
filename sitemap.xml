@@ -5,23 +5,155 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
+  <loc>http://mattdietz.net/2013/index.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/2014/index.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/2015/index.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
   <loc>http://mattdietz.net/archive.html</loc>
-  <lastmod>2014-09-09</lastmod>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/algorithms.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/c++.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/c.html</loc>
+  <lastmod>2015-02-22</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/dyndns.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/electronics.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/gamdev.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/game-programming.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/games.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/gaming.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/graphics.html</loc>
+  <lastmod>2015-04-12</lastmod>
  </url>
  <url>
   <loc>http://mattdietz.net/categories/index.html</loc>
-  <lastmod>2014-09-09</lastmod>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/ludum-dare.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/mdp.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/mikrotik.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/mvp.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/nerd.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/nerdkit.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/networking.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/osx.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/products.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/programming.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/remote-work.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/sfml.html</loc>
+  <lastmod>2015-04-12</lastmod>
  </url>
  <url>
   <loc>http://mattdietz.net/galleries/index.html</loc>
-  <lastmod>2014-09-09</lastmod>
+  <lastmod>2015-04-12</lastmod>
  </url>
  <url>
   <loc>http://mattdietz.net/index.html</loc>
-  <lastmod>2014-09-09</lastmod>
+  <lastmod>2015-04-12</lastmod>
  </url>
  <url>
   <loc>http://mattdietz.net/listings/index.html</loc>
-  <lastmod>2014-09-09</lastmod>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/posts/cdn-test.html</loc>
+  <lastmod>2015-02-08</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/posts/compiling-sfml-for-broader-osx-compatibility.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/posts/ludum-dare-18-hours-to-go.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/posts/mvp-vs-mdp.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/posts/namecheap-dyndns-with-a-mikrotik.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/posts/perlin-noise-for-terrain-generation.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/posts/team-communication-and-the-lcd.html</loc>
+  <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/posts/using-an-arduino-to-burn-bootloaders.html</loc>
+  <lastmod>2015-04-12</lastmod>
  </url>
 </urlset>

@@ -5,15 +5,103 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://mattdietz.net/categories/algorithms.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/c++.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/c.xml</loc>
+  <lastmod>2015-02-22</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/dyndns.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/electronics.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/gamdev.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/game-programming.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/games.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/gaming.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/graphics.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/ludum-dare.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/mdp.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/mikrotik.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/mvp.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/nerd.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/nerdkit.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/networking.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/osx.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/products.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/programming.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/remote-work.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://mattdietz.net/categories/sfml.xml</loc>
+  <lastmod>2015-04-12</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://mattdietz.net/galleries/rss.xml</loc>
-  <lastmod>2014-09-09</lastmod>
+  <lastmod>2015-04-12</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://mattdietz.net/rss.xml</loc>
-  <lastmod>2014-09-09</lastmod>
+  <lastmod>2015-04-12</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://mattdietz.net/sitemap.xml</loc>
-  <lastmod>2014-09-09</lastmod>
+  <lastmod>2015-04-12</lastmod>
  </sitemap>
 </sitemapindex>

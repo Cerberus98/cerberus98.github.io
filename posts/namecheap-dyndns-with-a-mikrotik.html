@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Namecheap DynDNS with a Mikrotik | mattdietz.net</title>
-<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
-<link rel="canonical" href="http://mattdietz.net/posts/namecheap-dyndns-with-a-mikrotik.html">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Matt Dietz">
-<meta name="og:title" content="Namecheap DynDNS with a Mikrotik">
-<meta name="og:url" content="http://mattdietz.net/posts/namecheap-dyndns-with-a-mikrotik.html">
-<meta name="og:description" content="I've been wanting to use my Mikrotik to update DynDNS for some time. After digging, I found out that newer firmware had a &quot;Cloud&quot; option that effectively accomplishes it, but I wanted to use a domain ">
-<meta name="og:site_name" content="mattdietz.net">
-<meta name="og:type" content="article">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Namecheap DynDNS with a Mikrotik | mattdietz.net</title>
+
+    
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+
+    
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+
+      <link rel="canonical" href="http://mattdietz.net/posts/namecheap-dyndns-with-a-mikrotik.html">
+
+
+
+
+    
+        <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
+
+    
+
+
+    
+
+    <meta name="author" content="Matt Dietz">
+        <link rel="prev" href="team-communication-and-the-lcd.html" title="Team Communication and the Least Common Denominator" type="text/html">
+        <link rel="next" href="mvp-vs-mdp.html" title="MVP vs MDP" type="text/html">
+    
+    <meta property="og:site_name" content="mattdietz.net">
+    <meta property="og:title" content="Namecheap DynDNS with a Mikrotik">
+    <meta property="og:url" content="http://mattdietz.net/posts/namecheap-dyndns-with-a-mikrotik.html">
+    <meta property="og:description" content="I've been wanting to use my Mikrotik to update DynDNS for some time. After digging, I found out that newer firmware had a &quot;Cloud&quot; option that effectively accomplishes it, but I wanted to use a domain ">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2014-09-09T04:44:24+00:00">
+           <meta property="article:tag" content="DynDNS">
+           <meta property="article:tag" content="Mikrotik">
+           <meta property="article:tag" content="Networking">
+
+    
+
+    
+
+
+
 </head>
 <body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
 <!-- Menubar -->
 
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><div class="container">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
 <!-- This keeps the margins nice -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -35,7 +72,8 @@
 <!-- /.navbar-header -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-<li>
+                
+                <li>
 <a href="https://twitter.com/cerberus98">Twitter</a>
                 </li>
 <li>
@@ -56,28 +94,40 @@
                 
             </li>
 </ul>
-<ul class="nav navbar-nav navbar-right">
-<li>
+
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                    
+    <li>
     <a href="namecheap-dyndns-with-a-mikrotik.md" id="sourcelink">Source</a>
     </li>
 
                 
             </ul>
-</div>
+        </div>
 <!-- /.navbar-collapse -->
     </div>
 <!-- /.container -->
-</nav><!-- End of Menubar --><div class="container">
+</nav>
+
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
     <div class="body-content">
         <!--Body content-->
         <div class="row">
             
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Namecheap DynDNS with a Mikrotik</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+    <header>
+        
+    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Namecheap DynDNS with a Mikrotik</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Matt Dietz</span></p>
-            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2014-09-09T04:44:24+00:00" itemprop="datePublished" title="Publication date">2014-09-09 04:44</time></a></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2014-09-09T04:44:24+00:00" itemprop="datePublished" title="2014-09-09 04:44">2014-09-09 04:44</time></a></p>
                 <p class="commentline">
         
     <a href="namecheap-dyndns-with-a-mikrotik.html#disqus_thread" data-disqus-identifier="cache/posts/namecheap-dyndns-with-a-mikrotik.html">Comments</a>
@@ -90,8 +140,11 @@
         </div>
         
 
-    </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>I've been wanting to use my Mikrotik to update DynDNS for some time. After digging, I found out that newer firmware had a "Cloud" option that effectively accomplishes it, but I wanted to use a domain I registered through Namecheap instead. Some googling showed that the "Scripts" functionality of the router was perfectly suited to the task; coupled with scheduling, I was good to go.</p>
+    </header>
+
+    <div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>I've been wanting to use my Mikrotik to update DynDNS for some time. After digging, I found out that newer firmware had a "Cloud" option that effectively accomplishes it, but I wanted to use a domain I registered through Namecheap instead. Some googling showed that the "Scripts" functionality of the router was perfectly suited to the task; coupled with scheduling, I was good to go.</p>
 <p>You're going to want to go to Namecheap and enable DynDNS for the domain you'd like to use. Checkout <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/43/11/how-do-i-setup-a-host-for-dynamic-dns">How do I setup a Host for Dynamic DNS?</a> and <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/595/11/how-do-i-enable-dynamic-dns-for-a-domain">How do I enable Dynamic DNS for a domain?</a> for more information on getting that setup. After you've done so, Namecheap will show you a password; be sure to copy that.</p>
 <!-- TEASER_END -->
 
@@ -105,33 +158,44 @@
 
 <span class="cp"># Get Public IP</span>
 
-<span class="o">/</span><span class="n">tool</span> <span class="n">fetch</span> <span class="n">url</span><span class="o">=</span><span class="s">"http://bot.whatismyipaddress.com/"</span> <span class="n">mode</span><span class="o">=</span><span class="n">http</span> <span class="n">dst</span><span class="o">-</span><span class="n">path</span><span class="o">=</span><span class="n">pubIP</span><span class="p">.</span><span class="n">txt</span>
-<span class="o">:</span><span class="n">local</span> <span class="n">currentIP</span> <span class="p">[</span><span class="o">/</span><span class="n">file</span> <span class="n">get</span> <span class="n">pubIP</span><span class="p">.</span><span class="n">txt</span> <span class="n">contents</span><span class="p">]</span>
+<span class="o">/</span><span class="n">tool</span> <span class="n">fetch</span> <span class="n">url</span><span class="o">=</span><span class="s">"http://bot.whatismyipaddress.com/"</span> <span class="n">mode</span><span class="o">=</span><span class="n">http</span> <span class="n">dst</span><span class="o">-</span><span class="n">path</span><span class="o">=</span><span class="n">pubIP</span><span class="p">.</span><span class="nl">txt</span>
+<span class="p">:</span><span class="n">local</span> <span class="n">currentIP</span> <span class="p">[</span><span class="o">/</span><span class="n">file</span> <span class="n">get</span> <span class="n">pubIP</span><span class="p">.</span><span class="n">txt</span> <span class="n">contents</span><span class="p">]</span>
 <span class="o">:</span><span class="n">log</span> <span class="n">info</span> <span class="s">"Current Public IP is:$currentIP"</span>
 
 <span class="o">:</span><span class="n">local</span> <span class="n">url1</span> <span class="s">"http://dynamicdns.park-your-domain.com/update</span><span class="se">\3</span><span class="s">Fhost=$subdomain&amp;domain=$domain&amp;password=$password&amp;ip=$currentIP"</span>
-<span class="o">/</span><span class="n">tool</span> <span class="n">fetch</span> <span class="n">url</span><span class="o">=</span><span class="p">(</span><span class="err">$</span><span class="n">url1</span><span class="p">)</span> <span class="n">mode</span><span class="o">=</span><span class="n">http</span>
-<span class="o">:</span><span class="n">log</span> <span class="n">info</span> <span class="s">"DNS Successfully Updated"</span>
+<span class="o">/</span><span class="n">tool</span> <span class="n">fetch</span> <span class="n">url</span><span class="o">=</span><span class="p">(</span><span class="err">$</span><span class="n">url1</span><span class="p">)</span> <span class="n">mode</span><span class="o">=</span><span class="nl">http</span>
+<span class="p">:</span><span class="n">log</span> <span class="n">info</span> <span class="s">"DNS Successfully Updated"</span>
 </pre>
 
 
 <p>Leaving the subdomain field as an empty string is perfectly acceptable.</p>
 <p>Test the script out using the "Run Script" button. If everything has gone well, you should see new lines in your "Log" menu. Furthermore, you'll see some files in the root of the router under the "File" menu. These were created by the script above to shuttle the data around.</p>
 <p>Next, you're going to want to set up a schedule. Ensure the clock is set correctly on your router: I recommend setting up SNTP. Once you've done that, click on "System" once again, and then "Scheduler." From there, click "Add New." The name of the job can be anything you'd like. Set the "Start Date" and "Start Time" to be today and in the near future. Finally, the "Interval" field is HH:MM:SS. I've seen people use it as frequently as every minute, but that seems like overkill. I'd also guess that Namecheap is likely to rate-limit you eventually. My own public IP only seems to change if there's a power outage, so I set the updates to be much less frequent. Finally, in the "On Event" field, put just the name of the script as you entered it previously. After that, you should have a scheduled Namecheap DynDNS updater.</p>
+</div>
     </div>
-    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../categories/dyndns.html" rel="tag">DynDNS</a></li>
+    <aside class="postpromonav">
+    <nav>
+    
+        <ul itemprop="keywords" class="tags">
+           <li><a class="tag p-category" href="../categories/dyndns.html" rel="tag">DynDNS</a></li>
            <li><a class="tag p-category" href="../categories/mikrotik.html" rel="tag">Mikrotik</a></li>
            <li><a class="tag p-category" href="../categories/networking.html" rel="tag">Networking</a></li>
         </ul>
-<ul class="pager">
-<li class="previous">
+
+    
+        <ul class="pager">
+            <li class="previous">
                 <a href="team-communication-and-the-lcd.html" rel="prev" title="Team Communication and the Least Common Denominator">Previous post</a>
             </li>
             <li class="next">
                 <a href="mvp-vs-mdp.html" rel="next" title="MVP vs MDP">Next post</a>
             </li>
-        </ul></nav></aside><section class="comments"><h2>Comments</h2>
+        </ul>
+
+    </nav>
+    </aside>
+        <section class="comments">
+        <h2>Comments</h2>
         
         
         <div id="disqus_thread"></div>
@@ -148,24 +212,41 @@
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
 </noscript>
     <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-        </section></article><script>var disqus_shortname="mattdietzet";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
-</div>
+        </section>
+    
+
+</article>
+
+        
+       <script>var disqus_shortname="mattdietzet";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+
+
+
+        </div>
         <!--End of body content-->
 
         <footer>
             Contents © 2015         <a href="mailto:matthew.dietz%20AT%20gmail.com">Matt Dietz</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
             
         </footer>
-</div>
+    </div>
 </div>
 
 
-            <script src="../assets/js/all-nocdn.js"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+            <script src="../assets/js/jquery.min.js"></script>
+            <script src="../assets/js/bootstrap.min.js"></script>
+            <script src="../assets/js/moment-with-locales.min.js"></script>
+            <script src="../assets/js/fancydates.js"></script>
+        <script src="../assets/js/jquery.colorbox-min.js"></script>
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
 <a class="addthis_button_more">Share</a>
 <ul>
 <li>
@@ -182,7 +263,19 @@
 </li>
 </ul>
 </div>
-<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><script>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script>$('a.image-reference:not(.islink)').colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+    <!-- fancy dates -->
+    <script>
+    moment.locale("");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script>
+    <!-- end fancy dates -->
+    
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -192,5 +285,6 @@
   ga('send', 'pageview');
 
 </script>
+
 </body>
 </html>
