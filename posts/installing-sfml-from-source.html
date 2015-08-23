@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Installing SFML from Source on OSX | mattdietz.net</title>
+
+    
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+
+    
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+
+      <link rel="canonical" href="http://mattdietz.net/posts/installing-sfml-from-source.html">
+
+
+
+
+    
+        <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
+
+    
+
+
+    
+
+    <meta name="author" content="Matt Dietz">
+        <link rel="prev" href="using-an-arduino-to-burn-bootloaders.html" title="Using an Arduino to burn bootloaders" type="text/html">
+    
+    <meta property="og:site_name" content="mattdietz.net">
+    <meta property="og:title" content="Installing SFML from Source on OSX">
+    <meta property="og:url" content="http://mattdietz.net/posts/installing-sfml-from-source.html">
+    <meta property="og:description" content="It's fairly easy to install SFML from source on OSX. Following the instructions in Compiling SFML with CMake you'll need CMake. The problem is CMake isn't included with OSX default. Fortunately, Homeb">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2015-08-23T05:57:05+00:00">
+           <meta property="article:tag" content="gamedev">
+           <meta property="article:tag" content="programming">
+           <meta property="article:tag" content="SFML">
+           <meta property="article:tag" content="tutorials">
+
+    
+
+    
+
+
+
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://mattdietz.net/">
+
+                <span id="blog-title">mattdietz.net</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                
+                <li>
+<a href="https://twitter.com/cerberus98">Twitter</a>
+                </li>
+<li>
+<a href="https://github.com/cerberus98">Github</a>
+                </li>
+<li>
+<a href="https://www.linkedin.com/pub/matt-dietz/3/742/48a">LinkedIn</a>
+                </li>
+<li>
+<a href="../archive.html">Archives</a>
+                </li>
+<li>
+<a href="../categories/index.html">Tags</a>
+                </li>
+<li>
+<a href="../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                    
+    <li>
+    <a href="installing-sfml-from-source.md" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+        </div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav>
+
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+    <header>
+        
+    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Installing SFML from Source on OSX</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Matt Dietz</span></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2015-08-23T05:57:05+00:00" itemprop="datePublished" title="2015-08-23 05:57">2015-08-23 05:57</time></a></p>
+                <p class="commentline">
+        
+    <a href="installing-sfml-from-source.html#disqus_thread" data-disqus-identifier="cache/posts/installing-sfml-from-source.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="installing-sfml-from-source.md" id="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header>
+
+    <div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>It's fairly easy to install SFML from source on OSX. Following the instructions in <a href="http://www.sfml-dev.org/tutorials/2.3/compile-with-cmake.php">Compiling SFML with CMake</a> you'll need CMake. The problem is CMake isn't included with OSX default. Fortunately, <a href="http://brew.sh/">Homebrew</a> remedies that for us. Simply follow the instructions on the Homebrew site to get started.</p>
+<p>Once that finishes installing, follow the current brew instructions for updating your formula list. Then, simply install CMake:</p>
+<pre class="code literal-block">    brew install cmake
+</pre>
+
+
+<p>Notice I omitted sudo. That's because homebrew installs everything under /usr/local/, and you're going to have a bad time if random bits and pieces under that hierarchy are owned by root.</p>
+<p>Next, snag SFML from source, cd into the cloned directory, and then kick off CMake</p>
+<pre class="code literal-block">    git clone https://github.com/SFML/SFML.git
+    cd SFML
+    cmake CMakeLists.txt
+</pre>
+
+
+<p>Once CMake finishes running (it'll take a couple seconds) you'll have our old friend Makefile generated in the local directory. You probably know what to do at this point</p>
+<pre class="code literal-block">    make
+    sudo make install
+</pre>
+
+
+<p>At this point, you should have some fancy new headers and libraries under /usr/local. Congrats!</p>
+<p>P.S. I'm a masochist and like to build SFML games from the command line, so I found out the hard way that /usr/local/include and /usr/local/lib aren't in your default search path. To tell clang you want it to look somewhere else, give it the -I (include path) and -L (library path) flags.</p>
+<pre class="code literal-block">    CFLAGS=-L/usr/local/lib -I/usr/local/include ...
+</pre>
+</div>
+    </div>
+    <aside class="postpromonav">
+    <nav>
+    
+        <ul itemprop="keywords" class="tags">
+           <li><a class="tag p-category" href="../categories/gamedev.html" rel="tag">gamedev</a></li>
+           <li><a class="tag p-category" href="../categories/programming.html" rel="tag">programming</a></li>
+           <li><a class="tag p-category" href="../categories/sfml.html" rel="tag">SFML</a></li>
+           <li><a class="tag p-category" href="../categories/tutorials.html" rel="tag">tutorials</a></li>
+        </ul>
+
+    
+        <ul class="pager">
+            <li class="previous">
+                <a href="using-an-arduino-to-burn-bootloaders.html" rel="prev" title="Using an Arduino to burn bootloaders">Previous post</a>
+            </li>
+        </ul>
+
+    </nav>
+    </aside>
+        <section class="comments">
+        <h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="mattdietzet",
+            disqus_url="http://mattdietz.net/posts/installing-sfml-from-source.html",
+        disqus_title="Installing SFML from Source on OSX",
+        disqus_identifier="cache/posts/installing-sfml-from-source.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section>
+    
+
+</article>
+
+        
+       <script>var disqus_shortname="mattdietzet";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+
+
+
+        </div>
+        <!--End of body content-->
+
+        <footer>
+            Contents © 2015         <a href="mailto:matthew.dietz%20AT%20gmail.com">Matt Dietz</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+    </div>
+</div>
+
+
+            <script src="../assets/js/jquery.min.js"></script>
+            <script src="../assets/js/bootstrap.min.js"></script>
+            <script src="../assets/js/moment-with-locales.min.js"></script>
+            <script src="../assets/js/fancydates.js"></script>
+        <script src="../assets/js/jquery.colorbox-min.js"></script>
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul>
+<li>
+<a class="addthis_button_facebook"></a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"></a>
+</li>
+<li>
+<a class="addthis_button_linkedin"></a>
+</li>
+<li>
+<a class="addthis_button_twitter"></a>
+</li>
+</ul>
+</div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script>$('a.image-reference:not(.islink)').colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+    <!-- fancy dates -->
+    <script>
+    moment.locale("");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script>
+    <!-- end fancy dates -->
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59430949-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

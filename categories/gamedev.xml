@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>mattdietz.net (gamedev)</title><link>http://mattdietz.net/</link><description></description><atom:link href="http://mattdietz.net/categories/gamedev.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 24 Aug 2015 03:19:50 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Installing SFML from Source on OSX</title><link>http://mattdietz.net/posts/installing-sfml-from-source.html</link><dc:creator>Matt Dietz</dc:creator><description>&lt;div&gt;&lt;p&gt;It's fairly easy to install SFML from source on OSX. Following the instructions in &lt;a href="http://www.sfml-dev.org/tutorials/2.3/compile-with-cmake.php"&gt;Compiling SFML with CMake&lt;/a&gt; you'll need CMake. The problem is CMake isn't included with OSX default. Fortunately, &lt;a href="http://brew.sh/"&gt;Homebrew&lt;/a&gt; remedies that for us. Simply follow the instructions on the Homebrew site to get started.&lt;/p&gt;
+&lt;p&gt;Once that finishes installing, follow the current brew instructions for updating your formula list. Then, simply install CMake:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;    brew install cmake
+&lt;/pre&gt;
+
+
+&lt;p&gt;Notice I omitted sudo. That's because homebrew installs everything under /usr/local/, and you're going to have a bad time if random bits and pieces under that hierarchy are owned by root.&lt;/p&gt;
+&lt;p&gt;Next, snag SFML from source, cd into the cloned directory, and then kick off CMake&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;    git clone https://github.com/SFML/SFML.git
+    cd SFML
+    cmake CMakeLists.txt
+&lt;/pre&gt;
+
+
+&lt;p&gt;Once CMake finishes running (it'll take a couple seconds) you'll have our old friend Makefile generated in the local directory. You probably know what to do at this point&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;    make
+    sudo make install
+&lt;/pre&gt;
+
+
+&lt;p&gt;At this point, you should have some fancy new headers and libraries under /usr/local. Congrats!&lt;/p&gt;
+&lt;p&gt;P.S. I'm a masochist and like to build SFML games from the command line, so I found out the hard way that /usr/local/include and /usr/local/lib aren't in your default search path. To tell clang you want it to look somewhere else, give it the -I (include path) and -L (library path) flags.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;    CFLAGS=-L/usr/local/lib -I/usr/local/include ...
+&lt;/pre&gt;&lt;/div&gt;</description><category>gamedev</category><category>programming</category><category>SFML</category><category>tutorials</category><guid>http://mattdietz.net/posts/installing-sfml-from-source.html</guid><pubDate>Sun, 23 Aug 2015 05:57:05 GMT</pubDate></item></channel></rss>

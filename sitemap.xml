@@ -14,7 +14,7 @@
  </url>
  <url>
   <loc>http://mattdietz.net/2015/index.html</loc>
-  <lastmod>2015-04-12</lastmod>
+  <lastmod>2015-08-23</lastmod>
  </url>
  <url>
   <loc>http://mattdietz.net/archive.html</loc>
@@ -49,6 +49,10 @@
   <lastmod>2015-04-12</lastmod>
  </url>
  <url>
+  <loc>http://mattdietz.net/categories/gamedev.html</loc>
+  <lastmod>2015-08-23</lastmod>
+ </url>
+ <url>
   <loc>http://mattdietz.net/categories/games.html</loc>
   <lastmod>2015-04-12</lastmod>
  </url>
@@ -62,7 +66,7 @@
  </url>
  <url>
   <loc>http://mattdietz.net/categories/index.html</loc>
-  <lastmod>2015-04-12</lastmod>
+  <lastmod>2015-08-23</lastmod>
  </url>
  <url>
   <loc>http://mattdietz.net/categories/ludum-dare.html</loc>
@@ -102,7 +106,7 @@
  </url>
  <url>
   <loc>http://mattdietz.net/categories/programming.html</loc>
-  <lastmod>2015-04-12</lastmod>
+  <lastmod>2015-08-23</lastmod>
  </url>
  <url>
   <loc>http://mattdietz.net/categories/remote-work.html</loc>
@@ -110,7 +114,11 @@
  </url>
  <url>
   <loc>http://mattdietz.net/categories/sfml.html</loc>
-  <lastmod>2015-04-12</lastmod>
+  <lastmod>2015-08-23</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/categories/tutorials.html</loc>
+  <lastmod>2015-08-23</lastmod>
  </url>
  <url>
   <loc>http://mattdietz.net/galleries/index.html</loc>
@@ -118,7 +126,7 @@
  </url>
  <url>
   <loc>http://mattdietz.net/index.html</loc>
-  <lastmod>2015-04-12</lastmod>
+  <lastmod>2015-08-23</lastmod>
  </url>
  <url>
   <loc>http://mattdietz.net/listings/index.html</loc>
@@ -131,6 +139,10 @@
  <url>
   <loc>http://mattdietz.net/posts/compiling-sfml-for-broader-osx-compatibility.html</loc>
   <lastmod>2015-04-12</lastmod>
+ </url>
+ <url>
+  <loc>http://mattdietz.net/posts/installing-sfml-from-source.html</loc>
+  <lastmod>2015-08-23</lastmod>
  </url>
  <url>
   <loc>http://mattdietz.net/posts/ludum-dare-18-hours-to-go.html</loc>
@@ -154,6 +166,6 @@
  </url>
  <url>
   <loc>http://mattdietz.net/posts/using-an-arduino-to-burn-bootloaders.html</loc>
-  <lastmod>2015-04-12</lastmod>
+  <lastmod>2015-08-23</lastmod>
  </url>
 </urlset>

@@ -99,6 +99,49 @@
 <div class="postindex">
     <article class="h-entry post-text">
     <header>
+        <h1 class="p-name entry-title"><a href="posts/installing-sfml-from-source.html" class="u-url">Installing SFML from Source on OSX</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Matt Dietz</span></p>
+            <p class="dateline"><a href="posts/installing-sfml-from-source.html" rel="bookmark"><time class="published dt-published" datetime="2015-08-23T05:57:05+00:00" title="2015-08-23 05:57">2015-08-23 05:57</time></a></p>
+                <p class="commentline">
+        
+    <a href="posts/installing-sfml-from-source.html#disqus_thread" data-disqus-identifier="cache/posts/installing-sfml-from-source.html">Comments</a>
+
+
+        </p>
+</div>
+    </header>
+    <div class="p-summary entry-summary">
+    <div>
+<p>It's fairly easy to install SFML from source on OSX. Following the instructions in <a href="http://www.sfml-dev.org/tutorials/2.3/compile-with-cmake.php">Compiling SFML with CMake</a> you'll need CMake. The problem is CMake isn't included with OSX default. Fortunately, <a href="http://brew.sh/">Homebrew</a> remedies that for us. Simply follow the instructions on the Homebrew site to get started.</p>
+<p>Once that finishes installing, follow the current brew instructions for updating your formula list. Then, simply install CMake:</p>
+<pre class="code literal-block">    brew install cmake
+</pre>
+
+
+<p>Notice I omitted sudo. That's because homebrew installs everything under /usr/local/, and you're going to have a bad time if random bits and pieces under that hierarchy are owned by root.</p>
+<p>Next, snag SFML from source, cd into the cloned directory, and then kick off CMake</p>
+<pre class="code literal-block">    git clone https://github.com/SFML/SFML.git
+    cd SFML
+    cmake CMakeLists.txt
+</pre>
+
+
+<p>Once CMake finishes running (it'll take a couple seconds) you'll have our old friend Makefile generated in the local directory. You probably know what to do at this point</p>
+<pre class="code literal-block">    make
+    sudo make install
+</pre>
+
+
+<p>At this point, you should have some fancy new headers and libraries under /usr/local. Congrats!</p>
+<p>P.S. I'm a masochist and like to build SFML games from the command line, so I found out the hard way that /usr/local/include and /usr/local/lib aren't in your default search path. To tell clang you want it to look somewhere else, give it the -I (include path) and -L (library path) flags.</p>
+<pre class="code literal-block">    CFLAGS=-L/usr/local/lib -I/usr/local/include ...
+</pre>
+</div>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
         <h1 class="p-name entry-title"><a href="posts/using-an-arduino-to-burn-bootloaders.html" class="u-url">Using an Arduino to burn bootloaders</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Matt Dietz</span></p>
